@@ -1,0 +1,63 @@
+{
+  "name": "example42-iptables",
+  "version": "2.1.3",
+  "summary": "Puppet module for foo",
+  "author": "Alessandro Franceschi",
+  "description": "This module installs and manages iptables. Check README.rdoc for details. Puppi is required for some common functions: you can install them without using the whole module. ",
+  "dependencies": [
+    {
+      "name": "example42/puppi",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=4.1.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">=1.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "LICENSE": "a300b604c66de62cf6e923cca89c9d83",
+    "Modulefile": "b2b9c9f187fa8f254bd9ec5cf43d50f3",
+    "README.md": "e9dab741e0161e2fff61103ce67e168a",
+    "Rakefile": "db67bde0625f9c5f11fed4f117befe1e",
+    "lib/puppet/parser/functions/size.rb": "ac608a27e3d9255f06278949a7e6e0b4",
+    "manifests/concat_emitter.pp": "aac22404fb70173e3867c6a76adc4594",
+    "manifests/debian.pp": "27b671ce02830a0bfc83b162630ad130",
+    "manifests/debug.pp": "70d9cb043a779ffc52d1de35f10610cd",
+    "manifests/file.pp": "2735b68ae64316addd882611a80414c9",
+    "manifests/init.pp": "f51fe0aeaef6aa66db58e4e9ca9f5bf2",
+    "manifests/params.pp": "18dfa5ef5b5e793f11d226d8c3b41e4b",
+    "manifests/rule.pp": "b3a2908849bbd2466cd6d4dbf7c36ff1",
+    "spec/classes/iptables_spec.rb": "d398172ad51195e36dad1db69eb97f62",
+    "spec/defines/iptables_concat_emitter_spec.rb": "2bd8749ffcd5ccc9b19fc31f580133fa",
+    "spec/defines/iptables_rule_spec.rb": "291ce3925debd5f6a8471c75a7214b79",
+    "spec/spec_helper.rb": "1fb2aeb0ba3e2e9e2a00efa4d36bfe45",
+    "templates/concat/filter_footer": "540958ffa84654821fe664428dffcb42",
+    "templates/concat/filter_forward_footer": "39ae2f90e4d56be1fcfd227c9459e1ae",
+    "templates/concat/filter_forward_header": "4fb759a49449d0e22b0593fe2d7f4340",
+    "templates/concat/filter_header": "9c3ba180e75628e1ce1b21c2fb8b0c53",
+    "templates/concat/filter_input_footer": "a141f0f81870e2547445fd0992e37725",
+    "templates/concat/filter_input_header": "612f79b44d0cb5f84274293c7107f316",
+    "templates/concat/filter_output_footer": "9b9d1a6a50caaa94e316e6795e214c90",
+    "templates/concat/filter_output_header": "c27d35dbae50944d636788491bb3aa35",
+    "templates/concat/mangle_footer": "540958ffa84654821fe664428dffcb42",
+    "templates/concat/mangle_header": "4fd7a41b9c57a0477c6930550285e361",
+    "templates/concat/nat_footer": "540958ffa84654821fe664428dffcb42",
+    "templates/concat/nat_header": "4691cd67c534e411925ff728f12ecbd1",
+    "templates/concat/rule.erb": "77f9a8be7ac3547bbd6c25c57ed43aae",
+    "templates/concat/rule_v6.erb": "ddac7c8938c8e354dc0225c25580199c",
+    "tests/debug.pp": "07b2e06383bb5bae96897679e4617c9c",
+    "tests/disable.pp": "0d247aa28d2a820fff3754d3504fbc7f",
+    "tests/disableboot.pp": "27ff0c543599d102d942040395f5b634",
+    "tests/init.pp": "d5b501ba7f6f34857338dd77647c37c3"
+  },
+  "source": "https://github.com/example42/puppet-iptables",
+  "project_page": "http://www.example42.com",
+  "license": "Apache2"
+}
