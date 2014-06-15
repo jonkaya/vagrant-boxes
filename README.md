@@ -3,9 +3,7 @@
 To use the machines first [Install Vagrant](https://docs.vagrantup.com/v2/installation/)
 then [Install Puppet](http://docs.puppetlabs.com/guides/install_puppet/pre_install.html)
 
-After installations finish and clone the repository, when 
-
-After running
+After installations finish, clone the repository and run
 
 ```bash
 vagrant up
