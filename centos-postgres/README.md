@@ -19,9 +19,11 @@ Puppet script
 Vagrant box uses bridged networking so it gets the next ip address from dhcp provider on your local network.
 Postgresql will be listening on the local network ip address of your machine.
 
-###Credentials for database
-*These values can be changed from the init.pp scriipt*
+#####Credentials for database
+*These values can be changed from the init.pp script*
+
 **Username:** dev
+
 **Password:** dev
 
 Following command may be used for logging in the machine
