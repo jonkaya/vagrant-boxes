@@ -1,0 +1,15 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    erwbgy/iptables (0.4.0)
+    example42/puppi (2.1.9)
+    example42/redis (2.0.8)
+      example42/puppi (>= 2.0.0)
+    example42/yum (2.1.9)
+      example42/puppi (>= 2.0.0)
+
+DEPENDENCIES
+  erwbgy/iptables (>= 0)
+  example42/redis (>= 0)
+  example42/yum (>= 0)
+
