@@ -10,7 +10,7 @@ vagrant first imports base Centos 6.5 machine and starts provisioning using pupp
 
 Puppet script 
 
-1. installs required development packages
+1. installs epel repositories 
 2. installs Redis
 3. adds firewall rules to access port 6379
 4. modifies Redis config on /etc/redis.conf to listen on all interfaces
