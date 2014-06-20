@@ -1,0 +1,10 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    erwbgy/iptables (0.4.0)
+    puppetlabs/stdlib (4.2.2)
+
+DEPENDENCIES
+  erwbgy/iptables (>= 0)
+  puppetlabs/stdlib (>= 0)
+

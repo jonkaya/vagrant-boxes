@@ -1,4 +1,4 @@
 forge "http://forge.puppetlabs.com"
 
-mod 'example42/yum'
 mod 'erwbgy/iptables'
+mod 'puppetlabs/stdlib'
