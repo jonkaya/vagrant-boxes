@@ -1,4 +1,4 @@
-## Mongodb Vagrant Machine on Centos 6.5
+## Couchdb Vagrant Machine on Centos 6.5
 
 After running 
 
@@ -10,17 +10,17 @@ vagrant first imports base Centos 6.5 machine and starts provisioning using pupp
 
 Puppet script 
 
-1. installs mongodb repositories 
-2. installs mongodb
-3. adds firewall rules to access port 27017
-4. modifies mongodb config on /etc/mongod.conf to listen on all interfaces
+1. enables epel repository 
+2. installs couchdb
+3. adds firewall rules to access port 5984
+4. modifies Couchdb config on /etc/couchdb/local.ini to listen on all interfaces
 
 Vagrant box uses bridged networking so it gets the next ip address from dhcp provider on your local network.
 Mongodb will be listening on the local network ip address of your machine.
 
 To control redis
 ```bash
-service mongod (start|stop|restart|status)
+service couchdb (start|stop|restart|status)
 ```
 
 Following command may be used for logging in the machine

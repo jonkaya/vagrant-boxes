@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos65"
+  config.vm.box_url = "http://delivery.developervms.com/vagrant/centos/CentOS-6.5-x86_64.box"
+ 
+  config.vm.define "couchdb" do |couchdb|
+  end
+
+  config.vm.hostname = "couchdb.vagrant"
+  config.vm.network :public_network
+  config.vm.provision :puppet do |puppet|
+    puppet.module_path = "manifests/modules"
+    puppet.manifests_path = "manifests"
+    puppet.manifest_file  = "init.pp"
+    puppet.options = "--verbose --debug"
+  end
+end
