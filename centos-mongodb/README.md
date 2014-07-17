@@ -18,7 +18,7 @@ Puppet script
 Vagrant box uses bridged networking so it gets the next ip address from dhcp provider on your local network.
 Mongodb will be listening on the local network ip address of your machine.
 
-To control redis
+To control Mongodb 
 ```bash
 service mongod (start|stop|restart|status)
 ```

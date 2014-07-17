@@ -16,9 +16,9 @@ Puppet script
 4. modifies Couchdb config on /etc/couchdb/local.ini to listen on all interfaces
 
 Vagrant box uses bridged networking so it gets the next ip address from dhcp provider on your local network.
-Mongodb will be listening on the local network ip address of your machine.
+Couchdb will be listening on the local network ip address of your machine.
 
-To control redis
+To control couchdb
 ```bash
 service couchdb (start|stop|restart|status)
 ```

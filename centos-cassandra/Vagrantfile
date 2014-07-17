@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos65"
+  config.vm.box_url = "http://delivery.developervms.com/vagrant/centos/CentOS-6.5-x86_64.box"
+ 
+  config.vm.define "cassandra" do |cassandra|
+  end
+  
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+  end
+  
+  config.vm.hostname = "cassandra.vagrant"
+  config.vm.network :forwarded_port, host: 9160, guest: 9160
+  config.vm.network :forwarded_port, host: 8888, guest: 8888
+  config.vm.network :forwarded_port, host: 7199, guest: 7199
+  config.vm.provision :puppet do |puppet|
+    puppet.module_path = "manifests/modules"
+    puppet.manifests_path = "manifests"
+    puppet.manifest_file  = "init.pp"
+    puppet.options = "--verbose --debug"
+  end
+end

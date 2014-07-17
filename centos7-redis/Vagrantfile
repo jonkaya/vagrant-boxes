@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos7-64"
+  config.vm.box_url = "http://delivery.developervms.com/vagrant/centos/CentOS-7.0-x86_64.box"
+ 
+  config.vm.define "redis" do |redis|
+  end
+
+  config.vm.hostname = "redis.vagrant"
+  config.vm.network :forwarded_port, host: 6379, guest: 6379
+  config.vm.provision :puppet do |puppet|
+    puppet.module_path = "manifests/modules"
+    puppet.manifests_path = "manifests"
+    puppet.manifest_file  = "init.pp"
+    puppet.options = "--verbose --debug"
+  end
+end

@@ -1,0 +1,12 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    erwbgy/iptables (0.4.0)
+    puppetlabs/stdlib (4.2.2)
+    tylerwalts/jdk_oracle (1.2.1)
+
+DEPENDENCIES
+  erwbgy/iptables (>= 0)
+  puppetlabs/stdlib (>= 0)
+  tylerwalts/jdk_oracle (>= 0)
+
