@@ -35,7 +35,7 @@ package { 'wget':
 
 file_line { 'modify_cassandra_conf':
   path  => '/etc/cassandra/conf/cassandra.yaml',
-  line  => 'rpc_address:0.0.0.0',
+  line  => 'rpc_address: 0.0.0.0',
   match => '^rpc_address.*',
   require => Package['dsc20'],
 }
